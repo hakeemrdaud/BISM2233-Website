@@ -5,6 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -269,7 +270,7 @@ th {
 }
 .glyphicon {
   position: relative;
-  top: 1px;
+  top: 15px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
