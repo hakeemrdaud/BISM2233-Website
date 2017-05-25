@@ -13,11 +13,26 @@
 
 .logo{
 	position: relative;
-	width: 70px;
-    height: 50px;
-    top:-14px;
-    left: 10px;
+	width: 163px;
+    height: 102px;
+    top:-48px;
+    left: -10px;
 }
+.Ima{
+	width: 800px;
+    height: 500px;
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 37px 0 34px;
+}
+
+.navbar-inverse {
+    background-color: #080808;
+    border-color: #080808;
+}
+
 .captionD{
 	text-align: justify;
 }
