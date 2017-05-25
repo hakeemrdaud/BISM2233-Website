@@ -18,6 +18,35 @@
     top:-48px;
     left: -10px;
 }
+
+.img-circle {
+    border-radius: 50%;
+    width: 10%;
+    margin-left: 80px;
+    display: inline;
+}
+
+
+
+.quote{
+	width: 250px;
+	height: 250px
+}
+.quotel{
+	position: relative;
+	width: 250px;
+	height: 0px;
+	margin-left: 446px;
+	top:-253px;
+}
+.quoteq{
+	position: relative;
+	width: 250px;
+	height: 0px;
+	margin-left: 906px;
+	top:-252px;
+}
+
 .Ima{
 	width: 800px;
     height: 500px;
