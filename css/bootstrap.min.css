@@ -22,10 +22,16 @@
 .img-circle {
     border-radius: 50%;
     width: 10%;
-    margin-left: 80px;
+    margin-left: 88px;
     display: inline;
 }
 
+.contacto{
+	position: relative;
+	top:-520px;
+	left:255px;
+
+}
 
 
 .quote{
