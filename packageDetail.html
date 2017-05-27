@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index2.html">Packages</a>
+                        <a href="index2.html">Products</a>
                     </li>
                     <li>
                         <a href="index4.html">About</a>
@@ -79,6 +79,10 @@
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
+            <BR>
+            <BR>
+            <BR>
+            <BR>
                 <h3 id="package_title">Name Packages</h3>
             </div>
         </div>
@@ -101,7 +105,8 @@
 
                         </p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a>
+                            <a id="package_price" href="#" class="btn btn-primary">Buy Now!</a>
+
                         </p>
                     </div>
                 </div>
@@ -135,22 +140,26 @@
         if (localStorage.getItem("package")=="CompletePackage") {
             document.getElementById("package_title").innerHTML = "Complete Package";
             document.getElementById("package_image").src = "Images/complete.png";
-            document.getElementById("package_description").innerHTML = "Entertaining guests at home? The complete package has all of the essentials for a great party. Is the most convinient for a lot of guests and the best with everything included (Cutlery, chairs, tables, a tent, tablecloth, portable fan, portable heather). Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.";
+            document.getElementById("package_price").innerHTML = "Buy Now! $599.99";
+            document.getElementById("package_description").innerHTML = "The complete package has all of the essentials for a great party. Is the most convenient for a lot of guests and the best with everything included (Cutlery: spoons x10, knives x10, forks x10, glasses x10, plates x10, dishes x10; chairs x10, tables x3, a tent, tablecloth, portable fan, portable heater). Price includes delivery and collection. ";
         }
         else if (localStorage.getItem("package")=="FamilyPackage") {
             document.getElementById("package_title").innerHTML = "Family Package";
             document.getElementById("package_image").src = "Images/family.jpg";
-            document.getElementById("package_description").innerHTML = "Our family dinner package is a great starting place for your next event. With a full selection of event essentials (Cutlery, chairs, tablecloth, portable fan, portable heather). Note that these are just a starting point and we would be pleased to tailor something to your needs and budget. Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.";
+            document.getElementById("package_price").innerHTML = "Buy Now! $329.99";
+            document.getElementById("package_description").innerHTML = "Our family dinner package is a great starting place for your next event. With a full selection of event essentials (Cutlery: spoons x10, knives x10, forks x10, glasses x10, plates x10, dishes x10; tablecloth, portable fan, portable heater). Price includes delivery and collection.";
         }
         else if (localStorage.getItem("package")=="CouplePackage") {
-            document.getElementById("package_title").innerHTML = "Couple Package";
+            document.getElementById("package_title").innerHTML = "Couples Package";
             document.getElementById("package_image").src = "Images/couple.jpg";
-            document.getElementById("package_description").innerHTML = "Experience romantic dining and feel the love in the air. From the picturesque to the more unique, you can enjoy romantic dining just the way you want. With our list of event items, we've made it easy for you to spoil someone special – please click more info to check prices. Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.";
+            document.getElementById("package_price").innerHTML = "Buy Now! $284.99";
+            document.getElementById("package_description").innerHTML = "Experience romantic dining and feel the love in the air. From the picturesque to the more unique, you can enjoy romantic dining just the way you want. With our list of event items (Cutlery: spoons x2, knives x2, forks x2, glasses x2, plates x2, dishes x2; table x1, chairs x2, tablecloth, portable fan, portable heater). We've made it easy for you to spoil someone special. Price includes delivery and collection. ";
         }
         else if (localStorage.getItem("package")=="SpecialPackage") {
             document.getElementById("package_title").innerHTML = "Special Package";
             document.getElementById("package_image").src = "Images/special.jpg";
-            document.getElementById("package_description").innerHTML = "The special package has all of the essentials for chill event at home. It includes half of items than the complete package (Cutlery, chairs, tables, a tent, tablecloth, portable fan, portable heather).Perfect package that sticks to your needs and budget. Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.";
+            document.getElementById("package_price").innerHTML = "Buy Now! $249.99";
+            document.getElementById("package_description").innerHTML = "The special package has all of the essentials for chill event at home. It includes half of items than the complete package (Cutlery: spoons x5, knives x5, forks x5, glasses x5, plates x5, dishes x5; chairs x5, tables x1, a tent, tablecloth, portable fan, portable heater). Perfect package that sticks to your needs and budget. Price includes delivery and collection.";
         }
         else{
             document.getElementById("package_title").innerHTML = "No Available Package";
