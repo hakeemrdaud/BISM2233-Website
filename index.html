@@ -14,6 +14,8 @@
         if (typeof(Storage) !== "undefined") {
             // Store
             localStorage.setItem("package", "None");
+            //console.log(localStorage);
+
         } else {
             console.log("Browser not available")
         }
@@ -133,8 +135,13 @@
         <div class="row text-center">
 
             <p align="justify"> Sweet & Spicy events is located in Brisbane and it provides a fast, efficient, simple and enjoyable online experience to customers. Customers can select from a wide range of party essentials and packages. From tables, chairs, glassware, cutlery, crockery and many other functional items that anyone needs to host a successful party, to functional extras like portable heater, portable fans, lighting, and tents. If you’re looking for a Brisbane event hire company that offers great service, quality equipment and very cheap prices, you’ve come to the right place. We’d love to help make your upcoming event a success.</p>
-            <img class="Ima" src="Images/g.png" alt="">
+            <img class="Ima" src="Images/Sweet.png" alt="This an image of the Sweet & Spicy warehouse with a logo in the center" usemap="#planetmap">
 
+            <map name="planetmap">
+                <area shape="rect" coords="0,0,240,156" href="index4.html" alt="About">
+                 <area shape="rect" coords="-100,300,600,156" href="contactpage.html" alt="Contacts">
+                <area shape="rect" coords="-100,350,900,156" href="index2.html" alt="Products">
+            </map>
 
         </div>
         <!-- /.row -->
@@ -153,14 +160,14 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="Images/complete.png" alt="">
+                    <img src="Images/complete.png" alt="This a table set up and chairs image with tablecloth,cutlery and fancy decoration.">
                     <div class="caption captionD">
                         <h3>Complete Package</h3>
                                 <p>Entertaining guests at home? The complete package has all of the essentials for a great party. Is the most convenient for a lot of guests and the best with everything included (Cutlery, chairs, tables, a tent, tablecloth, portable fan, portable heater).
                                 Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.
                                 </p>
                         <p>
-                            <a href="#" class="btn btn-primary">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CompletePackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Complete Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CompletePackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -168,13 +175,13 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="Images/family.jpg" alt="">
+                    <img src="Images/family.jpg" alt="This an image of a big table with a lot of charis and event like set up.">
                     <div class="caption captionD">
                         <h3>Family Package</h3>
                         <p>Our family dinner package is a great starting place for your next event. With a full selection of event essentials (Cutlery, chairs, tablecloth, portable fan, portable heater). Note that these are just a starting point and we would be pleased to tailor something to your needs and budget.
                         Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="FamilyPackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Family Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="FamilyPackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -182,13 +189,13 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="Images/couple.jpg" alt="">
+                    <img src="Images/couple.jpg" alt="This an image of a couple having dinner and drinking wine together.">
                     <div class="caption captionD">
                         <h3>Couples Package</h3>
                         <p>Experience romantic dining and feel the love in the air. From the picturesque to the more unique, you can enjoy romantic dining just the way you want. With our list of event items, we've made it easy for you to spoil someone special.
                         Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CouplePackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Couples Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CouplePackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -196,14 +203,14 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="Images/special.jpg" alt="">
+                    <img src="Images/special.jpg" alt="This a table set up and chairs image with tablecloth,cutlery and fancy decoration.">
                     <div class="caption captionD">
                         <h3>Special Package</h3>
                         <p>The special package has all of the essentials for chill event at home.
                         It includes half of items than the complete package (Cutlery, chairs, tables, a tent, tablecloth, portable fan, portable heater).Perfect package that sticks to your needs and budget.
                         Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="SpecialPackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary"onclick="addToCart('Special Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="SpecialPackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -247,6 +254,12 @@
         function CouplePackageChange() {
             localStorage.setItem("package", "CouplePackage");
         }
+
+        function addToCart(packageName){
+            alert("You have add " + packageName+" to your shopping cart. To process to payment, just click the shopping cart button")
+        }
+
+
     </script>
 
 

@@ -26,17 +26,32 @@
     background: #3B5998;
     color: white;
 }
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+    left: -4px;
+    position: relative;
+}
 
 /* Twitter */
 .fa-twitter {
     background: #55ACEE;
     color: white;
 }
+.fa-twitter:before {
+    content: "\f099";
+    position: relative;
+    left: -8px;
+}
 
 /* Instagram */
 .fa-instagram {
   background: #125688;
   color: white;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    position: relative;
+    left: -8px;
 }
 
 .center{
@@ -98,7 +113,7 @@ left: 88px;
 }
 
 .Ima{
-	width: 800px;
+	width: 1037px;
     height: 500px;
 }
 
