@@ -167,7 +167,7 @@
                                 Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.
                                 </p>
                         <p>
-                            <a href="#" class="btn btn-primary" onclick="addToCart('CompletePackage')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CompletePackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Complete Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CompletePackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                         <p>Our family dinner package is a great starting place for your next event. With a full selection of event essentials (Cutlery, chairs, tablecloth, portable fan, portable heater). Note that these are just a starting point and we would be pleased to tailor something to your needs and budget.
                         Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.</p>
                         <p>
-                            <a href="#" class="btn btn-primary" onclick="addToCart('FamilyPackage')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="FamilyPackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Family Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="FamilyPackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                         <p>Experience romantic dining and feel the love in the air. From the picturesque to the more unique, you can enjoy romantic dining just the way you want. With our list of event items, we've made it easy for you to spoil someone special.
                         Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.</p>
                         <p>
-                            <a href="#" class="btn btn-primary" onclick="addToCart('CouplesPackage')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CouplePackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Couples Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="CouplePackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                         It includes half of items than the complete package (Cutlery, chairs, tables, a tent, tablecloth, portable fan, portable heater).Perfect package that sticks to your needs and budget.
                         Price includes delivery and collection. Set-up by S&S Events staff is included – please click more info to check prices.</p>
                         <p>
-                            <a href="#" class="btn btn-primary"onclick="addToCart('SpecialPackage')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="SpecialPackageChange()">More Info</a>
+                            <a href="#" class="btn btn-primary"onclick="addToCart('Special Package')">Add to cart!</a> <a href="packageDetail.html" class="btn btn-default" onclick="SpecialPackageChange()">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -256,28 +256,7 @@
         }
 
         function addToCart(packageName){
-            //console.log(localStorage);
-            myCart = localStorage.getItem("cart");
-            //console.log(myCart);
-            var price;
-            if (packageName=="CompletePackage") {
-                price = 599.99;
-            }
-            else if (packageName=="FamilyPackage") {
-                price = 329.99;
-            }
-            else if (packageName=="CouplesPackage") {
-                price = 329.99;
-            }
-            else if (packageName=="SpecialPackage") {
-                price = 249.99;
-            }
-            var number = localStorage.length;
-            var myItem = {
-                name : packageName,
-                packagePrice : price
-            };
-            localStorage.setItem("item"+number.toString(),myItem);
+            alert("You have add " + packageName+" to your shopping cart. To process to payment, just click the shopping cart button")
         }
 
 
