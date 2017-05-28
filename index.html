@@ -14,7 +14,7 @@
         if (typeof(Storage) !== "undefined") {
             // Store
             localStorage.setItem("package", "None");
-            console.log(localStorage);
+            //console.log(localStorage);
 
         } else {
             console.log("Browser not available")
@@ -251,9 +251,9 @@
         }
 
         function addToCart(packageName){
-            console.log(localStorage);
+            //console.log(localStorage);
             myCart = localStorage.getItem("cart");
-            console.log(myCart);
+            //console.log(myCart);
             var price;
             if (packageName=="CompletePackage") {
                 price = 599.99;
@@ -268,9 +268,10 @@
                 price = 249.99;
             }
             var number = localStorage.length;
-            var myItem = new Array();
-            myItem.push(packageName);
-            myItem.push(price);
+            var myItem = {
+                name : packageName,
+                packagePrice : price
+            };
             localStorage.setItem("item"+number.toString(),myItem);
         }
 

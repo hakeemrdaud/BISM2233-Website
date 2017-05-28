@@ -111,7 +111,7 @@
                         </div>
                         <div class="panel-body">
                             <div id ="cart">
-                            <!--<div class="form-group">
+                            <div class="form-group">
                                 <div class="col-sm-3 col-xs-3">
                                     <img class="img-responsive" src="Images/pro.png" />
                                 </div>
@@ -148,7 +148,7 @@
                                 <div class="col-sm-3 col-xs-3 text-right">
                                     <h6><span>$</span>329.99</h6>
                                 </div>
-                            </div>-->
+                            </div>
                             </div>
                             <div class="form-group"><hr /></div>
                             <div class="form-group">
@@ -301,6 +301,13 @@
                 
                 </form>
             </div>
+            <br>
+                <center>
+                    <p>
+                            <a href="confirmationPage.html" class="btn btn-primary" onclick="">Complete Payment</a>
+                        </p>
+                </center>
+                <br>
             <div class="row cart-footer">
         
             </div>
@@ -333,48 +340,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
-    <script>
-        if(localStorage.getItem("package")!== "undefined"){
-            localStorage.removeItem("package");
-        }
-        
-        var row = localStorage.length;
-        for (var i = 2; i <= row; i++) {
-            var item = localStorage.getItem("item"+i.toString());
-            console.log(item);
-            console.log(item[0]);
-            
-            var div = document.createElement('div');
-            div.className = 'form-group';
-
-            var divImage = document.createElement('div');
-            divImage.className = 'col-sm-3 col-xs-3';
-
-
-            var divAreaItem = document.createElement('div');
-            divAreaItem.className = "col-sm-6 col-xs-6";
-
-            var divPackageName = document.createElement('div');
-            divPackageName.className = "col-xs-12";
-            divPackageName.innerHTML = item[0];
-
-            var divPrice = document.createElement('div');
-            divPrice.className = "col-sm-3 col-xs-3 text-right";
-            divPrice.innerHTML = item[1].toString();
-
-            div.appendChild(divImage);
-            divAreaItem.appendChild(divPackageName);
-            div.appendChild(divAreaItem);
-            div.appendChild(divPrice);
-
-            document.getElementById("cart").appendChild(div);
-
-            
-            
-        }
-
-    </script>
 
 
 </body>
